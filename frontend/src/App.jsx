@@ -105,6 +105,8 @@ function App() {
       {/* Search */}
       <div className="search-container">
         <input
+          id="search"
+          name="search"
           className="search-input"
           placeholder="Search notes by title..."
           value={search}
@@ -118,6 +120,8 @@ function App() {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
+              id="title"
+              name="title"
               className="form-input"
               placeholder="Note Title"
               value={form.title}
@@ -130,6 +134,8 @@ function App() {
 
           <div className="form-group">
             <textarea
+              id="description"
+              name="description"
               className="form-textarea"
               placeholder="Write your note description here..."
               value={form.description}
