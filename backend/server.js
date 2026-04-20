@@ -17,3 +17,7 @@ app.use("/api/notes", require("./routes/notes"));
 app.listen(process.env.PORT, () => {
   console.log("Server running on port 5000");
 });
+
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
